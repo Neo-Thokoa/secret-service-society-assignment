@@ -1,0 +1,12 @@
+<div class="layout">
+      <sidebar></sidebar>
+      <div class="chat-wrapper">
+            <conversation-header title="{{chatCtrl.channel.name | channel: chatCtrl.channel.isDM}}"></conversation-header>
+            <div class="chat-body">
+                  <message-list></message-list>
+            </div>
+            <div class="chat footer">
+                  <message-form></message-form>
+            </div>
+      </div>
+</div>

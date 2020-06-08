@@ -1,0 +1,47 @@
+{
+  "name": "g-authenticator-system",
+  "version": "1.0.0",
+  "description": "Client-Server for authenticating and analyzing results",
+  "main": "src/server/app.js",
+  "dependencies": {
+    "angular-cookies": "^1.8.0",
+    "angularjs-social-login": "^2.6.1",
+    "braces": "^3.0.2",
+    "express": "^4.17.1",
+    "funding": "^1.0.9",
+    "ng-cookies": "^1.0.2",
+    "python-shell": "^2.0.1",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node src/server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neo-Thokoa/COS720_G-Authenticator.git"
+  },
+  "author": "Neo Thokoa",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Neo-Thokoa/COS720_G-Authenticator/issues"
+  },
+  "homepage": "https://github.com/Neo-Thokoa/COS720_G-Authenticator#readme",
+  "keywords": [],
+  "devDependencies": {
+    "angular": "^1.6.1",
+    "angular-mocks": "^1.6.1",
+    "angular-ui-router": "^0.4.2",
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-es2015": "^6.22.0",
+    "grunt": "^1.1.0",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-karma": "^4.0.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^5.0.9",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}

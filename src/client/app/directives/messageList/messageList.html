@@ -1,0 +1,11 @@
+<div class="message-list">
+  <div ng-repeat="message in chatCtrl.channel.messages" class="message-item {{message.type}}">
+    <avatar user="message.user" ng-if="message.isUserMessage"></avatar>
+    <div class="message-container">
+      <div class="meta">
+        <span class="author" ng-if="message.isUserMessage"><strong>{{message.user.name}}</strong></span><span class="date"> {{message.createdAt | date: 'h:mm a'}}</span>
+      </div>
+      <p>{{message.text}}</p>
+      </div>
+    </div>
+  </div>

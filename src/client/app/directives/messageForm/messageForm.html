@@ -1,0 +1,6 @@
+<div class="message-area">
+      <p>{{chatCtrl.channel.status}}&nbsp</p>
+      <form name="messageForm" ng-submit="messageFormCtrl.send()" class="chat" style="width: 100%;">
+            <input id="m" class="form-control" ng-model="messageFormCtrl.message.text" autocomplete="off" placeholder="Type a message" ng-change="messageFormCtrl.textBoxDidUpdate()" />
+      </form>
+</div>
