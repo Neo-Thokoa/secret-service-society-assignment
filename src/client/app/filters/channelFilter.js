@@ -1,4 +1,4 @@
-angular.module('WebChat')
+angular.module('SecretSocietyChat')
 .filter('channel', function() {
   return function(input, isUser) {
         if(isUser) {

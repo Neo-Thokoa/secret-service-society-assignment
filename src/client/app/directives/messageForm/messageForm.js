@@ -1,4 +1,4 @@
-angular.module('WebChat').directive('messageForm', ['$http','Events',   function($http, Events, Channels) {
+angular.module('SecretSocietyChat').directive('messageForm', ['$http','Events',   function($http, Events, Channels) {
       return {
             restrict: 'E',
             templateUrl: 'app/directives/messageForm/messageForm.html',

@@ -1,5 +1,5 @@
 (function() {
-      angular.module('WebChat').directive('messageList', ['$http','Channels', function($http, Channels) {
+      angular.module('SecretSocietyChat').directive('messageList', ['$http','Channels', function($http, Channels) {
       return {
             restrict: 'E',
             replace: true,

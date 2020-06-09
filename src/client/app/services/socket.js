@@ -1,4 +1,4 @@
-angular.module('WebChat').factory('socket',
+angular.module('SecretSocietyChat').factory('socket',
 function(socketFactory) {
       return socketFactory();
 });

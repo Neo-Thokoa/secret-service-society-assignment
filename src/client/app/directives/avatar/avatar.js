@@ -1,7 +1,7 @@
 (function() {
       'use strict';
 
-      angular.module('WebChat').directive("avatar",['Gravatar', 'emailFilter', function(Gravatar, emailFilter){
+      angular.module('SecretSocietyChat').directive("avatar",['Gravatar', 'emailFilter', function(Gravatar, emailFilter){
         return {
           replace: true,
           restrict: "E",

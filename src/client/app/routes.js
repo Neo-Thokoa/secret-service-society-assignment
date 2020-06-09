@@ -1,4 +1,4 @@
-angular.module('WebChat').config(function($routeProvider) {
+angular.module('SecretSocietyChat').config(function($routeProvider) {
 $routeProvider.
       when('/', {
             redirectTo: '/login'

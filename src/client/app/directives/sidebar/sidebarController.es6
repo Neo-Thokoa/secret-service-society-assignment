@@ -29,5 +29,5 @@ class SidebarController {
       }
 }
 
-angular.module('WebChat').controller( 'SidebarController', SidebarController);
+angular.module('SecretSocietyChat').controller( 'SidebarController', SidebarController);
 SidebarController.$inject = ['Channels', 'Users', '$scope'];

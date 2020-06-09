@@ -1,0 +1,1189 @@
+html{
+    position: relative;
+    min-height: 100%;
+    background-color: white;
+    padding:0px;
+    margin:0px;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+td.doublelanes { white-space: pre; }
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.imageDownload, .imageTrash{
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+  width: 25%;
+  height: 20%;
+  padding-left: -5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.editImageTrash{
+  position: absolute;
+  bottom: 10%;
+  left: 60%;
+  width: 25%;
+  height: 20%;
+  cursor: pointer;
+}
+
+.editImageDownload{
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 25%;
+  height: 20%;
+  cursor: pointer;
+}
+.editImageTrash:hover,
+.editImageDownload:hover,
+.imageDownload:hover,
+.imageTrash:hover{
+  width: 30%;
+  height: 25%;
+}
+
+#fileToUpload{
+  width: 20%;
+  height: 20%;
+}
+
+.barcodeUploadDiv{
+  position: relative;
+  width: 25%;
+  height: 20%;
+  padding-right: 5px;
+  margin-top: 5%;
+}
+
+
+.uploadButton {
+  border: 2px solid #a742f4;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.fileName{
+  margin: 0 auto;
+  font-size: 12px;
+  position: absolute;
+  color: inherit;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+}
+
+.thumbnailDiv{
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: relative;
+  /*border: 1px solid black;*/
+  margin-left: 1px;
+  min-height: 250px;
+  color: black;
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+
+.barcodeThumbnailDiv{
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: relative;
+  /*border: 1px solid black;*/
+  margin-left: 1px;
+  min-height: 250px;
+  color: black;
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+
+div.thumbnailDiv:hover{
+  background: #191970;
+  color: white;
+}
+
+#attachmentThumbnails{
+  position: relative;
+  text-align: center;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+}
+
+
+.attachImage{
+
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+}
+/*valid and Available cell*/
+.goodCell
+{
+  width: 100%;
+  background-color: green;
+  border:1px solid black;
+  color:white;
+}
+
+.goodCelli{
+  color: green;
+}
+
+.occupiedCelli{
+  color: cornflowerblue;
+}
+
+.badCelli{
+  color: red;
+}
+
+.notACelli{
+  color: lightgrey;
+}
+
+/*cell that is valid but not available*/
+.occupiedCell
+{
+  width: 100%;
+  background-color: cornflowerblue;
+  border:1px solid black;
+  color:white;
+}
+
+/*not valid cell*/
+.badCell
+{
+  width: 100%;
+  background-color: red;
+  border:1px solid black;
+  color:white;
+}
+
+/*not a cell*/
+.notACell
+{
+  width: 100%;
+  background-color: lightgrey;
+  border:1px solid black;
+  color:white;
+}
+
+.table-wrapper
+{
+  overflow: auto;
+}
+
+.navImg {
+    height: 85px;
+    margin-top: -25px;
+    background-color: white;
+    padding:15px;
+    /*padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;*/
+}
+
+#myNavbar {
+    padding: 0px;
+    margin: 0px;
+    /*height: 96px !important;*/
+    background-color:#a742f4;
+}
+
+#myNavbar a {
+    padding-top:25px;
+}
+
+#myNavbar ul {
+
+}
+
+
+.navPointer {
+  cursor: pointer;
+    /*height: 96px !important;*/
+}
+
+.navHeading{
+  padding-top:15px;
+    color:white;
+   display:inline-block;
+}
+
+
+.usrDrp{
+    padding-right:20px;
+    /*margin-right:10px;*/
+}
+
+.appNavBar {
+
+    margin-left: 0px;
+    padding: 0px;
+    width: 100%;
+    /*height: 96px;*/
+    border-left: 15px solid #e10729;
+    border-radius: 0px;
+}
+
+#navCont {
+    margin:auto;
+    width:98%;
+    padding-left:10px;
+    background-color:#e10729;
+    border:solid transparent 0px;
+}
+
+.usrDrp{
+}
+
+.saveButtonWiz {
+    float: right;
+    width: 135px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.loginLogo {
+    padding: 0px;
+    box-shadow: -25px -25px 0px 25px rgb(225, 7, 41);
+}
+.loginHeading {
+    text-align: left;
+    margin-top: 12%;
+    padding: 0px;
+    color:white !important;
+}
+.loginLabel
+{
+    margin-top:5%;
+
+}
+#forgotPass
+{
+   float:right;
+}
+#regBtn
+{
+    margin-left:7%;
+}
+.imageDiv {
+    padding-right: 0px;
+}
+.loginCont {
+    padding: 0px;
+    margin: 0px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+}
+.saveButtonWizDis {
+    float: right;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.warningLabel {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:white !important;
+}
+#notificationModal .modal-dialog {
+    width: 40%;
+    position: static;
+    color: black;
+}
+
+.hBtnText{
+    display:inline;
+    padding:30px;
+}
+
+.hBtnDiv:hover{
+    border: solid 1px #c48b3b;
+}
+
+.hBtnDiv {
+    padding: 10px;
+    height: 90px;
+    border: solid 1px transparent;
+    cursor: pointer;
+}
+
+#helpModal .modal-dialog {
+    width: 40%;
+    position: static;
+    color: black;
+}
+.eightenyardarea{
+    height:70px;
+}
+#buttons
+{
+	width: 300px;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    background-color: white;
+    color: #005bab;
+}
+
+.navbar-default
+{
+    background-color: white;
+    border-color: #005bab;
+}
+
+#navbutton
+{
+	border-left: 3px solid #005bab;
+	border-right: 3px solid #005bab;
+}
+
+#navhead
+{
+	background-color: white;
+	padding-left: 20px;
+	//width:100px;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus
+{
+    color: #005bab;
+    background-color: white;
+}
+
+
+#flexiView {
+    padding-left: 2%;
+    padding-right: 2%;
+    /*width:80%;*/
+}
+#questions {
+    padding-left: 20px;
+}
+#questionsSub {
+      color: white;
+    background-color: #005ed7;
+   width: 100%;
+}
+#username, #password {
+    width:100%;
+}
+
+.navbar-inverse {
+    background-color: #005bab;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #005bab;
+    background-color: white;
+}
+
+#navPipe a:hover{
+    color: white;
+    background-color: #005bab;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+.navbar-inverse .navbar-nav > .active > a .caret {
+    border-top-color: #005bab;
+    border-bottom-color: #005bab;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret,
+.navbar-inverse .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: red;
+    border-bottom-color: red;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #005bab;
+    background-color: white;
+}
+
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+/*.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    background-color: white;
+}*/
+
+#myModal .modal-dialog  {
+    width:40%;
+    position:static;
+    color:black;
+}
+
+#deleteModal .modal-dialog  {
+    width:40%;
+    position:static;
+}
+
+#deleteAreaModal .modal-dialog  {
+    width:40%;
+    position:static;
+}
+
+#DivisionTypeModal .modal-dialog  {
+    width:60%;
+    position:static;
+}
+
+#EditDivisionTypeModal .modal-dialog  {
+    width:60%;
+    position:static;
+}
+
+#addModal .modal-dialog  {
+    width:60%;
+    position:static;
+}
+
+#myModal2 .modal-dialog {
+    width: 60%;
+   position:static;
+}
+
+#myModal2 {
+    z-index: 1000000000 !important;
+}
+
+#myModal3 .modal-dialog {
+    width: 30%;
+    position:static;
+
+}
+
+#myModal3 {
+    z-index: 10000000000 !important;
+}
+
+#logSearch {
+    height:34px;
+    text-align:center;
+
+}
+
+body
+{
+    background-color:white;
+    padding:0px;
+    margin:0px;
+}
+
+table
+{
+	background-color: white;
+	border-radius: 5px;
+}
+
+th
+{
+	background-color: #a742f4;
+	color: white;
+}
+
+.page-section-header {
+    /*background-color: #005bab;*/
+}
+
+.box
+{
+    width:70%;
+    margin:auto;
+}
+
+.section-icon
+{
+    width: 40px;
+    height: 40px;
+    text-align:center;
+    padding: 10px 0 0 0;
+    display: inline-block;
+}
+
+#h5
+{
+    color:#a742f4;
+    display:inline;
+}
+
+.saveButton
+{
+    float:right;
+    min-width: 100px;
+    height: 20px;
+    border-radius:5px;
+    margin:5px;
+}
+#buttonFinal
+{
+    color:white;
+    float:right;
+    margin-left:20px;
+    height:30px;
+    width:180px;
+    background-color:#005bab;
+}
+
+.buttonDiv
+{
+    color:white;
+    margin-left:20px;
+    height:30px;
+    width:180px;
+}
+
+#searchSection
+{
+    /*width:100%;*/
+    border-radius:0px;
+    border-color:#c48b3b !important;
+}
+
+#searchSection.active{
+    border-color:#e10729 !important;
+    /*border-color:#c48b3b !important;*/
+}
+
+.search-parameter{
+    border-radius:0px !important;
+}
+
+.advancedSearchBox .search-parameter{
+    background-color:#005bab !important;
+}
+
+.noBorder{
+    border: 0px solid transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.reset
+{
+    width: 100px;
+    height: 20px;
+    border-radius:5px;
+}
+.generateRep
+{
+    width: 150px;
+    height: 20px;
+    border-radius:5px;
+}
+.midSection
+{
+    background-color:white;
+    height:100%;
+}
+
+#subHeading
+{
+    color:#a742f4;
+    font-weight: bold;
+    padding-top:15px;
+}
+
+.btn-primary {
+    background: #a742f4;
+    color: #ffffff;
+    height: 30px;
+    border-color: #a742f4;
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+        color: #a742f4;
+        background-color: white;
+        border-color: #a742f4;
+    }
+
+.innerSection
+{
+
+    width:80%;
+    margin:auto;
+}
+
+hr
+{
+    border-color:#e10729;
+
+}
+
+.inline
+{
+    display:inline-block;
+}
+
+.tableButtons
+{
+    color:white;
+    float:right;
+    margin-left:0px;
+    height:30px;
+    min-width:180px;
+}
+
+.btn-menu {
+    background: #337ab7;
+    border-color:#2e6da4;
+    color: #ffffff;
+}
+
+.btn-menu:hover, .btn-menu:focus, .btn-menu:active, .btn-menu.active, .open > .dropdown-toggle.btn-menu {
+    background: #33a6cc;
+}
+
+.institutionButtons
+{
+    width:130px;
+    height: 20px;
+    border-radius:5px;
+    //position:relative;
+    margin-top:10px;
+}
+
+.messages
+{
+    border: 2px solid #a742f4;
+    /*border-radius: 5px;*/
+    padding: 20px;
+    margin-top:15px;
+}
+
+#buttonDiv,#addButton {
+
+    color:white;
+     float:right;
+      margin-left:20%;
+      height:30%;
+      width:8%;
+       background-color:#005bab;
+}
+
+.divisionDrop
+{
+    width:200px;
+    display:inline-block;
+}
+
+.fundDrop
+{
+    width:100%;
+    padding: 5px;
+    display:inline-block;
+}
+
+.md-c1 {
+    border: 3px solid black;
+    /*outline:none;*/
+    border-bottom-style:double;
+    border-radius:10px;
+    border-color:lightgray darkgrey;
+    background-color:blue;
+    height:210px;
+    width:200px;
+}
+.md-title1 {
+    padding-top:5px;
+    /*border: 3px solid lightgrey;*/
+    background-color:darkgrey;
+    z-index:50;
+    text-align:center;
+    height:5%;
+}
+.pictures {
+    float:right;
+    position:relative;
+    /*left:25%;*/
+    /*align-content:center;*/
+    /*padding-left:26%;*/
+
+    padding-top:10px;
+    height:80%;
+    /*width:100%;*/
+}
+/**:focus {
+outline:none;
+}*/
+.pictures2 {
+    padding-left:25%;
+}
+
+
+.lookupInput
+{
+    width:50%;
+    display:inline-block;
+}
+
+p
+{
+    color:#e10729;
+}
+input
+{
+    border-radius:0px !important;
+}
+.multipleDrop {
+    display:inline;
+}
+#money {
+    display:inline;
+    margin-left:5px;
+    margin-top:-24px;
+}
+
+
+.secondDrop {
+    /*margin-top:-3.8%;*/
+    width: 98%;
+}
+
+#fundingAddProjBox {
+margin-top: 3%;
+margin-left:0%;
+
+}
+
+label {
+    font-family: 'Open Sans';
+    font-weight:200;
+}
+#retMess
+{
+    color:black;
+}
+
+.simpleSearchBox {
+     border: 2px solid lightgrey;
+    border-radius: 5px;
+    padding: 8px;
+    width:100%;
+    margin-top:10px;
+}
+
+.YearsExpander
+{
+    border: 2px solid darkgray;
+
+    background-color:gray;
+    width:100%;
+    margin-top:10px;
+    text-align:center;
+    color:white !important;
+}
+
+.yearDetails {
+    background-color: lightgray;
+}
+.subYearDetails {
+    padding-left:3px;
+    padding-right:3px;
+
+}
+
+.datepickerdemoBasicUsage {
+  /** Demo styles for mdCalendar. */ }
+  .datepickerdemoBasicUsage md-content {
+    padding-bottom: 200px; }
+  .datepickerdemoBasicUsage .validation-messages {
+    font-size: 12px;
+    color: #dd2c00;
+    margin-left: 15px;
+
+  }
+
+  .passwordChangeButton
+{
+      padding-left:160px;
+    width:130px;
+    height: 20px;
+    border-radius:5px;
+    //position:relative;
+    margin-top:10px;
+}
+
+
+.threeButtons {
+    min-width: 105px;
+}
+
+.glyphicon-search{
+    color:#005bab;
+}
+
+.select-search{
+    border-radius:0px !important;
+}
+
+th{
+    text-align:center;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+   border: 0.5px solid #c48b3b;
+}
+
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #005bab;
+    border-color: #005bab;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 8px 18px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: black;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius:0px !important;
+}
+
+.spacer{
+    padding:5px;
+    margin:0px;
+}
+
+.currency {
+   padding-bottom:10px;
+   padding-left:7px;
+   color:forestgreen;
+}
+.projectDrop {
+
+    border: 1px solid #005bab;
+    border-radius: 5px;
+    width:90%;
+    margin:auto;
+    padding: 7px;
+    margin-top:5px;
+}
+
+#projectFunds {
+    background-color:azure;
+    color:black
+}
+
+.my-drop-zone{
+  border: dotted 3px lightgray;
+}
+
+.aniTable{
+  overflow-x: scroll !important;
+}
+.table{
+  /*table-layout: fixed;*/
+}
+
+.nv-file-over{
+  border: dotted 3px red;
+  } /* Default class applied to drop zones on over */
+
+.another-file-over-class {
+  border: dotted 3px green;
+}
+
+canvas{
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 3px 3px 3px 0 #e3e3e3;
+  -moz-box-shadow: 3px 3px 3px 0 #e3e3e3;
+  box-shadow: 3px 3px 3px 0 #e3e3e3;
+  border: 1px solid #c3c3c3;
+  height: 100px;
+  margin: 6px 0 0 6px;
+}
+
+
+/*LOADING GIF*/
+.loading-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-icon .loader {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border: 4px solid #a742f4;
+  animation: loader 2s infinite ease;
+}
+
+.loadingText{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.loading-icon .loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #a742f4;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+.h2-style{
+  color: #a742f4;
+  font-size: 32px;
+  font-family: open_sanslight;
+  margin-top: 7px;
+  font-weight: inherit;
+  text-align: center;
+}
+
+oi-select.focused .select-search{
+  border-color: #a742f4 !important;
+}
+
+oi-select .select-dropdown{
+  border-color: #a742f4 !important;
+}
+
+.adminIcons{
+    color: #a742f4 !important;
+}
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.animate-if.ng-enter,
+.animate-if.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.animate-if.ng-leave,
+.animate-if.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(180deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+
+#loadCircle{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%; }
+  25% {
+    height: 0%; }
+  50% {
+    height: 100%; }
+  75% {
+    height: 100%; }
+  100% {
+    height: 0%; } }
+
+.circle{
+  padding: 20%;
+  width: 100%;
+  text-align: center;
+}
+div#loader{
+   position: relative;
+   z-index: 7777;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    background-color: white;
+    cursor: default;
+    z-index: 7776;
+}
+
+#contextmenu-node{
+    position: absolute;
+    background-color: white;
+    border: solid #CCCCCC 1px;
+}
+
+.contextmenu-item{
+    margin: 0.5em;
+    padding-left: 0.5em;
+}
+
+.contextmenu-item:hover{
+    background-color: #CCCCCC;
+    cursor: default;
+}
+
+.sambpleTableHeadings{
+  font-size: 11px;
+}
+
+.sampleTableContent{
+  font-size: 12px;
+  min-height: 30px;
+  min-width: 90px;
+}
+
+.sampleTableColumns,
+.freezManTableColumns{
+  width: 100px;
+  padding: 5px;
+}
+
+.well{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.freezManTableContent{
+  font-size: 13px;
+  min-height: 30px;
+  min-width: 90px;
+}
+
+.select-search-list{
+  cursor: pointer;
+}
+
+.select-search-list-item > input{
+  cursor: pointer;
+}
+
+.selectedCell{
+  background: blue;
+}
+
+.lastCheckLabels{
+  width: 50%;
+  float: left;
+}
+
+.lastCheckData{
+  width: 50%;
+  float: right;
+}
+
+.lastShowHeading{
+  color: #a742f4;
+}
+.sampleMaterialControls{
+  text-align: center;
+}
+
+.subheadings{
+  text-align: center;
+}
+
+.searchFormDiv{
+  text-align: center;
+  width: 100%;
+}
+
+.searchFormErrors{
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.centerDiv{
+  text-align: center;
+}
+
+.sampleOccasionsTextArea{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 50px;
+  max-height: 250px;
+}
+
+.menuGrid{
+   display: grid;
+   border: 1px solid #a742f4;
+}

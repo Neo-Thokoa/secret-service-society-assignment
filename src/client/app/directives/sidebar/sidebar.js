@@ -1,4 +1,4 @@
-angular.module('WebChat').directive('sidebar',   ['Channels','Users', function(Channels, Users) {
+angular.module('SecretSocietyChat').directive('sidebar',   ['Channels','Users', function(Channels, Users) {
 return {
       restrict: 'E',
       templateUrl: 'app/directives/sidebar/sidebar.html',
