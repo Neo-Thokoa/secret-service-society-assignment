@@ -1,64 +1,45 @@
 'use strict';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+angular.module('SecretSocietyChat').controller('LoginController', ['Users', '$scope', '$location', '$http', function(Users, $scope, $location, $http){
+      var vm = this;
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var LoginController = function () {
-      function LoginController(Users, $scope, $location, $http) {
-            _classCallCheck(this, LoginController);
-
-            this.Users = Users;
-            this.username = '';
-            this.$location = $location;
-            this.$http = $http;
-      }
-
-      // Checks with the server that the username is available, if it is, login the user
-
-
-      _createClass(LoginController, [{
-            key: 'attemptToLogin',
-            value: function attemptToLogin(username) {
-                  var self = this;
-                  this.$http({ method: 'get', url: '/users/available?username=' + username }).then(function successCallback(response) {
+      gapi.load('auth2', function() { // Loads the auth2 component of gapi
+            gapi.auth2.init({ // initialize the auth2 using your credentials
+              client_id: '668988752508-s1gu02k5f9jmkg0l5ssvvs63qenljogv.apps.googleusercontent.com'
+            }).then(function onInit() { // on complete of init
+              gapi.signin2.render("g-signin2", { // render the HTML button on the screen providing the ID of the element (g-signin2)
+                onsuccess: function(googleUser) { // This executes when a user successfully authorizes you to their data by clicking the button and selecting their account.
+                  $scope.userFound = true;
+                  $scope.user = {};
+                  var profile = googleUser.getBasicProfile();
+                  console.log('ID: ' + profile.getId());
+                  $scope.user.id = profile.getId();
+                  console.log('Name: ' + profile.getName());
+                  $scope.user.name = profile.getName();
+                  console.log('Image URL: ' + profile.getImageUrl());
+                  $scope.user.photo = profile.getImageUrl();
+                  console.log('Email: ' + profile.getEmail());
+                  $scope.user.email = profile.getEmail();
+                  var authResponse = googleUser.getAuthResponse();
+                  $scope.user.domain      = googleUser.getHostedDomain();
+                  $scope.user.idToken     = authResponse.id_token;
+                  $scope.user.expiresAt   = authResponse.expires_at;
+                  console.log('Domain: ' + $scope.user.domain);
+                  console.log('idToken: ' + $scope.user.idToken);
+                  console.log('expiresAt: ' + $scope.user.expiresAt);
+                  var username = Users.randomID()
+                  $http({ method: 'get', url: '/users/available?username=' + $scope.user.id }).then(function successCallback(response) {
                         if (response.data.isAvailable) {
-                              self.login(username);
+                              Users.setUser(username);
+                              $location.path('/chat');
                         } else {
                               // Display error message
                               self.info = 'username is not available. Try something else';
                         }
                   });
-            }
+                }
+              });
+            });
+          });
 
-            // Performs login operation and reroutes view
-
-      }, {
-            key: 'login',
-            value: function login(username) {
-                  // Login user
-                  this.Users.setUser(username);
-                  // Show Chat view
-                  this.$location.path('/chat');
-            }
-
-            // Called when form is submitted
-
-      }, {
-            key: 'processLogin',
-            value: function processLogin(shouldGenerateUsername) {
-                  // Check if should generate a random username
-                  if (shouldGenerateUsername) {
-                        this.attemptToLogin(this.Users.randomID());
-                  } else {
-                        var username = this.username;
-                        this.attemptToLogin(username);
-                  }
-            }
-      }]);
-
-      return LoginController;
-}();
-
-angular.module('SecretSocietyChat').controller('LoginController', LoginController);
-LoginController.$inject = ['Users', '$scope', '$location', '$http'];
+}]);

@@ -156,7 +156,7 @@ var Events = function () {
                         // Add channel
                         this.Channels.addChannel(dmChannel);
                         // Show notification
-                        var userJoinedMessage = 'Welcome' + data.username + ' joining the secret service society';
+                        var userJoinedMessage = 'Welcome ' + data.username + ' joining the secret service society';
                         this.showNotification(userJoinedMessage);
                         return true;
                   } else {
