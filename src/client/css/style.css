@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  text-align: center;
 }
 
 .bold {
@@ -149,7 +150,7 @@ body {
 }
 
 .notification p {
-      text-align: center;
+      text-align: left;
       color: gray;
 }
 

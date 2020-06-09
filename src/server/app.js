@@ -295,15 +295,11 @@ io.on('connection', function (socket) {
    }
   });
 
-  // when the client emits 'typing', we broadcast it to others
   socket.on('user typing', function (typingData) {
-        console.log(socket.username + ' is typing...');
         socket.broadcast.emit('user typing', typingData);
   });
 
-  // when the client emits 'stop typing', we broadcast it to others
   socket.on('stop typing', function (typingData) {
-        console.log(socket.username + ' stopped typing');
         socket.broadcast.emit('stop typing', typingData);
   });
 
