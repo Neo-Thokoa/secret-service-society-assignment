@@ -16,7 +16,7 @@ var Events = function () {
             this.Notifications = Notifications;
             this.Channels = Channels;
             // Set active channel
-            Channels.setChannelForChannelID('secretsocietychat');
+            Channels.setChannelForChannelID('Secret Society Chat');
             // Register to receive socket messages
             this.registerSocketEvents();
             // Get existing users already connected

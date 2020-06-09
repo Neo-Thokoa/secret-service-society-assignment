@@ -8,7 +8,7 @@ var Channels = function () {
       function Channels(Users) {
             _classCallCheck(this, Channels);
 
-            this.presetChannels = ['secretsocietychat'];
+            this.presetChannels = ['Secret Society Chat'];
             // currently active channel, this will be a reference to an object in channels
             this.activeChannel = {};
 

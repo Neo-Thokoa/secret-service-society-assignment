@@ -16,7 +16,7 @@ var Channel = function () {
             this.id = id;
             this.name = name;
 
-            if (name === 'secretsocietychat') {
+            if (name === 'Secret Society Chat') {
                   this.isSecretSociety = true;
             }
 

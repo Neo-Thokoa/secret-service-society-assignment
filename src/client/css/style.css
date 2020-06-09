@@ -101,14 +101,6 @@ body {
 }
 
 
-.avatar {
-      display: flex;
-      width: 60px;
-      height: 60px;
-      display: inline;
-      border-radius: 5px;
-}
-
 .message-container {
       flex: 1 1;
       display: flex;
