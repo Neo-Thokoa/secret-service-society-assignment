@@ -17,3 +17,7 @@ Youtube demo:
 * This system uses AngularJS 1.7 for its client side front-end
 * The Backend runs with Node
 * The interaction between the system and Gmail is through GoogleAPI platform
+
+To run program, run:
+npm install
+npm start
