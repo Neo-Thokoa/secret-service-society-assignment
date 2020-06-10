@@ -19,5 +19,6 @@ Youtube demo:
 * The interaction between the system and Gmail is through GoogleAPI platform
 
 To run program, run:
-npm install
-npm start
+* npm install
+
+* npm start
