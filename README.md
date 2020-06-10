@@ -4,7 +4,7 @@ A COS 720 Assignment on a secret message system where no ones identity is expose
 Name: Neo Thokoa
 Student number: u14163285
 
-Youtube demo: 
+Youtube demo: https://www.youtube.com/watch?v=a6GHr0LgMzk
 
 
 ## The G-Authenticator
