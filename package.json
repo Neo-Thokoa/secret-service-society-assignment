@@ -28,7 +28,7 @@
   "homepage": "https://github.com/Neo-Thokoa/COS720_G-Authenticator#readme",
   "keywords": [],
   "devDependencies": {
-    "angular": "^1.6.1",
+    "angular": "^1.8.3",
     "angular-mocks": "^1.6.1",
     "angular-ui-router": "^0.4.2",
     "babel-cli": "^6.22.2",
