@@ -11,7 +11,7 @@
     "funding": "^1.0.9",
     "ng-cookies": "^1.0.2",
     "python-shell": "^2.0.1",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.5.0"
   },
   "scripts": {
     "start": "node src/server/app.js"
